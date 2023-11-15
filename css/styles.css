@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply uppercase border border-clr_primary_200 px-10 py-2 font-alata tracking-[0.2rem] text-clr_primary_200 text-lg transition-all duration-500 hover:bg-clr_primary_200 hover:text-clr_primary_100;
+  }
+  .img_text {
+    @apply absolute bottom-2 left-5 text-clr_primary_100 uppercase text-2xl max-w-[10ch] font-josefin lg:left-1/4 lg:text-3xl;
+  }
+  .creation_img {
+    @apply hover:scale-150 hover:cursor-pointer transition-all duration-700;
+  }
+}
+.fancy_text {
+  background-image: linear-gradient(white, white);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: all 350ms ease;
+  transition-delay: 100ms;
+  cursor: pointer;
+}
+.fancy_text:hover {
+  background-size: 100% 2px;
+}
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideout {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.slide_in {
+  animation-name: slidein;
+  animation-duration: 500ms;
+  animation-delay: 0ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+.slide_out {
+  animation: slideout 500ms linear 0ms 1 alternate forwards;
+}

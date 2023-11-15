@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Loopstudios</title>
+    <!-- googel fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- linking the javascript file -->
+    <script src="script.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav
+      class="bg-hero-img-sm bg-cover bg-no-repeat md:bg-hero-img-lg md:bg-center min-h-[97vh] px-6 lg:px-[8.5rem] lg:py-6 lg:min-h-[68vh] laptop:px-40 laptop:min-h-[75vh] laptop:py-8"
+    >
+      <!-- container class -->
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center py-8">
+          <img
+            class="scale-[0.90] relative z-[60]"
+            src="images/logo.svg"
+            alt=""
+          />
+          <img
+            aria-controls="mobile_menu"
+            class="md:hidden hamburger hover:cursor-pointer"
+            src="images/icon-hamburger.svg"
+            alt="Hamburger Icon"
+          />
+          <img
+            class="close hidden hover:cursor-pointer relative z-[60]"
+            src="images/icon-close.svg"
+            alt=""
+          />
+          <div
+            class="overlay w-0 fixed z-10 left-0 top-0 bg-clr_primary_200 overflow-x-hidden transition-all duration-500 min-h-[100vh]"
+          >
+            <div class="block text-clr_primary_100 transition-all duration-300">
+              <!-- mobile navbar -->
+              <ul class="mt-[50%] space-y-6 pl-8 text-xl sm:text-3xl">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Desktop navbar -->
+          <ul class="hidden md:flex text-clr_primary_100 gap-6 font-alata">
+            <li><a class="fancy_text" href="#">About</a></li>
+            <li><a class="fancy_text" href="#">Careers</a></li>
+            <li><a class="fancy_text" href="#">Events</a></li>
+            <li><a class="fancy_text" href="#">Products</a></li>
+            <li><a class="fancy_text" href="#">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Main text -->
+
+        <h2
+          class="border-2 border-white mt-32 text-clr_primary_100 font-josefin uppercase text-[2.5rem] leading-10 px-6 py-4 transition-all duration-300 sm:mt-40 sm:py-12 sm:px-12 sm:text-5xl md:px-16 md:py-8 md:max-w-[85%] lg:max-w-[60%] lg:text-6xl lg:mt-20 lg:px-10 lg:hover:text-clr_primary_200 lg:hover:bg-clr_primary_100 lg:hover:tracking-widest laptop:text-7xl laptop:mt-24 laptop:hover:tracking-wide"
+        >
+          Immersive experiences that deliver
+        </h2>
+      </div>
+    </nav>
+    <main
+      class="container mx-auto px-6 mt-24 relative lg:px-[8.5rem] lg:mt-28 laptop:mt-40"
+    >
+      <img
+        class="mx-auto lg:hidden"
+        src="images/mobile/image-interactive.jpg"
+        alt=""
+      />
+      <img
+        class="hidden lg:block px-8"
+        src="images/desktop/image-interactive.jpg"
+        alt=""
+      />
+      <!-- Text Container -->
+      <div
+        class="text-center mt-12 space-y-8 bg-clr_primary_100 lg:absolute lg:bottom-0 lg:right-0 lg:max-w-[45%] lg:p-8 laptop:pt-24 laptop:right-16 laptop:text-left laptop:pl-24 laptop:pb-0"
+      >
+        <h2
+          class="font-josefin uppercase text-[2rem] leading-7 md:text-4xl lg:text-5xl"
+        >
+          The leader in interactive vr
+        </h2>
+        <p
+          class="font-alata text-clr_primary_400 px-4 sm:text-lg lg:text-base laptop:px-0 laptop:max-w-[45ch]"
+        >
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </main>
+    <!-- Our Creations -->
+    <section
+      class="container mx-auto mt-[5.5rem] px-6 lg:px-[8.5rem] laptop:mt-[11rem]"
+    >
+      <div class="text-center mt-8 md:flex md:justify-between lg:px-6">
+        <h2
+          class="text-center text-[2rem] font-josefin uppercase laptop:text-5xl"
+        >
+          Our Creations
+        </h2>
+        <button class="hidden md:block btn">See all</button>
+      </div>
+
+      <!-- Images container -->
+      <div
+        class="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-4 lg:pl-8 lg:pt-8 laptop:mt-16"
+      >
+        <!-- Deep Earth -->
+        <picture class="relative overflow-hidden">
+          <source
+            media="(min-width: 640px)"
+            srcset="images/desktop/image-deep-earth.jpg"
+          />
+          <img
+            class="creation_img"
+            src="images/mobile/image-deep-earth.jpg"
+            alt=""
+          />
+          <p class="img_text max-w-[5ch]">Deep Earth</p>
+        </picture>
+        <!-- Night Arcade -->
+        <picture class="relative overflow-hidden">
+          <source
+            media="(min-width: 640px)"
+            srcset="images/desktop/image-night-arcade.jpg"
+          />
+          <img
+            class="creation_img"
+            src="images/mobile/image-night-arcade.jpg"
+            alt=""
+          />
+          <p class="img_text">Night Arcade</p>
+        </picture>
+        <!-- Soccer Team Vr -->
+        <picture class="relative overflow-hidden">
+          <source
+            media="(min-width: 640px)"
+            srcset="images/desktop/image-soccer-team.jpg"
+          />
+          <img
+            class="creation_img"
+            src="images/mobile/image-soccer-team.jpg"
+            alt=""
+          />
+          <p class="img_text">Soccer Team VR</p>
+        </picture>
+        <!-- The Grid -->
+        <picture class="relative overflow-hidden">
+          <source
+            media="(min-width: 640px)"
+            srcset="images/desktop/image-grid.jpg"
+          />
+          <img class="creation_img" src="images/mobile/image-grid.jpg" alt="" />
+          <p class="img_text max-w-[5ch]">the grid</p>
+        </picture>
+        <!--From up Above vr  -->
+        <picture class="relative overflow-hidden">
+          <source
+            media="(min-width: 640px)"
+            srcset="images/desktop/image-from-above.jpg"
+          />
+          <img
+            class="creation_img"
+            src="images/mobile/image-from-above.jpg"
+            alt=""
+          />
+          <p class="img_text">from up above vr</p>
+        </picture>
+        <!-- Pocket Boreails -->
+        <picture class="relative overflow-hidden">
+          <source
+            media="(min-width: 640px)"
+            srcset="images/desktop/image-pocket-borealis.jpg"
+          />
+          <img
+            class="creation_img"
+            src="images/mobile/image-pocket-borealis.jpg"
+            alt=""
+          />
+          <p class="img_text">pocket boreails</p>
+        </picture>
+        <!-- The Curiosity -->
+        <picture class="relative overflow-hidden">
+          <source
+            media="(min-width: 640px)"
+            srcset="images/desktop/image-curiosity.jpg"
+          />
+          <img
+            class="creation_img"
+            src="images/mobile/image-curiosity.jpg"
+            alt=""
+          />
+          <p class="img_text">The curiosity</p>
+        </picture>
+        <!-- Make it fisheye -->
+        <picture class="relative overflow-hidden">
+          <source
+            media="(min-width: 640px)"
+            srcset="images/desktop/image-fisheye.jpg"
+          />
+          <img
+            class="creation_img"
+            src="images/mobile/image-fisheye.jpg"
+            alt=""
+          />
+          <p class="img_text">Make it fisheye</p>
+        </picture>
+      </div>
+      <div class="text-center mt-8 md:hidden">
+        <button class="btn">See all</button>
+      </div>
+    </section>
+    <footer class="bg-clr_primary_200">
+      <div
+        class="container mx-auto mt-2 text-clr_primary_100 font-alata text-center space-y-5 px-6 md:mt-20 md:grid md:grid-cols-2 md:items-end md:px-10 lg:mt-40 lg:px-[8.5rem] lg:pb-10 laptop:mt-48"
+      >
+        <div class="space-y-5">
+          <img
+            class="mx-auto pt-16 md:mx-0 md:pt-0"
+            src="images/logo.svg"
+            alt=""
+          />
+          <ul
+            class="flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start laptop:gap-8"
+          >
+            <li><a class="fancy_text" href="#">About</a></li>
+            <li><a class="fancy_text" href="#">Careers</a></li>
+            <li><a class="fancy_text" href="#">Events</a></li>
+            <li><a class="fancy_text" href="#">Projects</a></li>
+            <li><a class="fancy_text" href="#">Support</a></li>
+          </ul>
+        </div>
+        <!-- social media icons -->
+        <div class="space-y-5">
+          <div
+            class="pt-5 flex gap-6 justify-center sm:justify-center md:justify-end laptop:gap-4"
+          >
+            <img class="fancy_text" src="images/icon-facebook.svg" alt="" />
+            <img class="fancy_text" src="images/icon-twitter.svg" alt="" />
+            <img class="fancy_text" src="images/icon-pinterest.svg" alt="" />
+            <img class="fancy_text" src="images/icon-instagram.svg" alt="" />
+          </div>
+          <p class="md:text-right text-clr_primary_500">
+            © 2021 Loopstudios. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
